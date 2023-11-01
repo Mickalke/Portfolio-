@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoje Portfolio Graficzne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">Strona główna</a>
+                        <a class="navbar-item" href="index.html#portfolio">Portfolio</a>
+                        <a class="navbar-item" href="o_mnie.html">O mnie</a>
+                        <a class="navbar-item" href="kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- O mnie -->
+    <main>
+        <section class="section" id="o_mnie">
+            <div class="container">
+                <h1>Zainterysowania</h1>
+                <P>Moje zainteresowanie grafiką komputerową zaczęło się, kiedy w wieku 13 lat na zajęciach zaprezentowano nam program Adobe Photoshop CC 2014. W domu zaczynałem od eksperymentów w GIMP-ie. Wkrótce, pasja ta zaowocowała nauką obsługi Adobe Photoshop w gimnazjum. Na początku liceum odkryłem Adobe Illustrator, gdzie skupiłem się na grafice wektorowej oraz projektowaniu koszulek i bluz. Stworzyłem wtedy kilka unikalnych projektów na urodziny dla moich przyjaciół. W ostatnim czasie, do mojego repertuaru dołączył także program Adobe Lightroom, w którym chętnie ulepszam moje zdjęcia z zagranicznych wakacji. Zawsze, kiedy widziałem na ulicy plakat czy baner, analizowałem go, zastanawiając się, co zrobiłbym inaczej i co w nim mi się podoba. Tworzyłem różne grafiki: miniaturki, loga, banery, czy logotypy, głównie dla znajomych, które były wykorzystywane na platformie YouTube. Od października 2023 roku jestem członkiem działu technicznego w Centrum Mediów. Tam rozwijam kolejną pasję – akustykę. Uczę się tam obsługi programu Adobe Audition, gdzie zajmuję się obróbką dźwięku, nagraniami oraz, ostatnio, montażem wideo w Final Cut Pro dla kanału YouTube Radia 1.7.</P>
+                <h2 class="o mnie">Co potrafię?</h2>
+                <p>Obecnie dalej rozwijam swoje umiejętności w programach od Adobe tj. Photoshop, Illustrator, Lightroom a do tego doszedl obecnie program Adobe Audtion oraz Fincal Cut pro.</p>
+            </div>
+        </section>
+           <!-- Sekcja programów -->
+        <section class="section" id="programy">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="PS.png" alt="Photoshop">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="il.png" alt="Illustrator">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="audition.png" alt="Illustrator">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="finalcp.png" alt="Illustrator">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="lr.png" alt="Illustrator">
+                    </div>
+                </div>
+                
+                <!-- Dodajemy przyciski nawigacyjne -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>        
+        </section>
+    </main>
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>© 2023 Portfolio Graficzne. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    
+    // Inicjalizacja Swiper
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 3, // Ilość widocznych slide'ów na raz
+        spaceBetween: 30, // Odstęp pomiędzy slide'ami
+        breakpoints: { // Odpowiedź na różne rozmiary ekranu
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        }
+    });
+
+});
+
+    </script>
+</body>
+</html>
+
